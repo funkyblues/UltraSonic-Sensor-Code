@@ -24,7 +24,7 @@ while True:
         file = open('/home/pi/{0}'.format(file_title), 'a')
     while True:
         file1 = open('/home/pi/{0}'.format(file_title), 'a')
-        format_date = datetime.now().strftime("%H:%M:%S")
+        format_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         data = port.readline().strip()
         file1.write(format_date)
         file1.write(" ")
