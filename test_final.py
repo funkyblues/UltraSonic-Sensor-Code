@@ -3,6 +3,8 @@ import os
 import serial
 from datetime import datetime
 from datetime import date
+import pymysql
+
 
 port = serial.Serial("/dev/ttyACM0", "57600")
 
